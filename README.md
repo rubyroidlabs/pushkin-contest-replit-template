@@ -23,8 +23,15 @@ OR just create a new Ruby Repl and copy files.
 
 ## 3. Develop
 
+### Description
 Quize server sends POST requests with quize task to your Replit server. Your server should solve this task and make POST request to the Quize server with the answer. Check `lib/solver.rb` for details!
 
+### Goal
 Your task is to change Solver's code in that way, when it solves all quize tasks correctly and fastly.
 
+### Additional info
 All needed data you can find in `data/`.
+
+### Gems
+You can install any gem via "packages" interface in Replit.
+![How to install gem guide.](./docs/images/replit-packages.png)
