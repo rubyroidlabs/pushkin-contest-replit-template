@@ -7,7 +7,7 @@ class Solver
   ADDR=URI("https://pushkin-contest-hexlet.rubyroidlabs.dev/")
 
   def initialize
-    @http = Net::HTTP.new(ADDR.host)
+    @http = Net::HTTP.start(ADDR.host, ADDR.port, use_ssl: true)
   end
 
   def call(env)
