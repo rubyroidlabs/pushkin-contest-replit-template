@@ -3,7 +3,7 @@ require 'net/http'
 require 'retryable'
 
 class Solver
-  TOKEN='3e81fe7c2ae2be50eb7b034ebb637c10'
+  TOKEN='<YOUR_TOKEN_HERE>'
   ADDR=URI("http://pushkin-contest.ror.by/")
 
   def initialize
