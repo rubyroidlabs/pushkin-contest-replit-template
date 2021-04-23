@@ -11,8 +11,10 @@ class Solver
   end
 
   def call(env)
-    params = JSON.parse(env["rack.input"].read)
-    resolve(params)
+    if env["REQUEST_METHOD"] == "POST"
+      params = JSON.parse(env["rack.input"].read)
+      resolve(params)
+    end
 
     [200, {"Content-Type" => "text/html"}, ["Hello World!"]]
   end
@@ -21,7 +23,7 @@ class Solver
     answer = 'HELLO WORLD!'
     #############################################################
     #
-    #                     YOUR ALGORITHM HERE
+    #                    YOUR ALGORITHM HERE
     #
     #############################################################
     send_answer(answer, params["id"])

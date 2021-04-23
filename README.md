@@ -5,3 +5,5 @@
 1. Authorize in Replit via Github account.
 1. Click "New repl" -> "Import from GitHub" -> pass link to your fork.
 1. Enjoy!
+
+OR just create a new Ruby Repl and copy files from rep
