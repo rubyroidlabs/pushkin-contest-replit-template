@@ -4,7 +4,7 @@ require 'retryable'
 
 class Solver
   TOKEN='<YOUR_TOKEN_HERE>'
-  ADDR=URI("http://pushkin-contest-hexlet.rubyroidlabs.dev/")
+  ADDR=URI("https://pushkin-contest-hexlet.rubyroidlabs.dev/")
 
   def initialize
     @http = Net::HTTP.new(ADDR.host)
